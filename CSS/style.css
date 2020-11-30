@@ -12,6 +12,7 @@
   --primary-bg-color: #ffffff;
   --logo-color: #2196f3;
   --secondary-bg-color: #2f303a;
+  --other-bg-color: #f5f4fa;
 }
 
 h1,
@@ -49,16 +50,30 @@ body {
   align-items: center;
 }
 
-.container {
+.header .container {
   display: flex;
+}
+
+.container {
+  /*display: flex;*/
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
   width: 1230px;
   padding: 0 15px;
 }
 
 .section {
-  padding: 94px 215px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+/*.section .container {
+  padding-left: 215px;
+  padding-right: 215px;*/
+}
+
+.section.no-padding {
+  padding-bottom: 0;
 }
 
 .header-nav {
@@ -132,13 +147,12 @@ body {
 
 /*==========HERO==========*/
 .hero {
-  display: block;
   width: 100%;
   background-color: var(--secondary-bg-color);
   min-height: 600px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -195,7 +209,6 @@ body {
 }
 
 .list-text {
-  /*font-family: Roboto, sans-serif;*/
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -225,6 +238,9 @@ body {
 /*========= END Чем мы занимаемся====*/
 
 /*========= OUR TEAM====*/
+.team-color {
+  background-color: var(--other-bg-color);
+}
 .team {
   display: flex;
 }
@@ -234,7 +250,6 @@ body {
 }
 
 .name {
-  /*font-family: Roboto;*/
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -309,7 +324,7 @@ body {
 }
 
 .portfolio-button {
-  font-family: inherit; /*не унаследует шрифт  с боди*/
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
