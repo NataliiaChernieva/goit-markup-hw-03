@@ -44,21 +44,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-/*=============HEADER=======*/
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.header .container {
-  display: flex;
-}
-
 .container {
-  /*display: flex;*/
   margin: 0 auto;
   /*outline: 2px solid tomato;*/
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
 }
 
@@ -67,9 +56,17 @@ body {
   padding-top: 94px;
 }
 
-/*.section .container {
-  padding-left: 215px;
-  padding-right: 215px;*/
+/*=============HEADER=======*/
+.header {
+  display: flex;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header-boder {
+  border-bottom: 1px solid #ececec;
 }
 
 .section.no-padding {
@@ -147,8 +144,6 @@ body {
 
 /*==========HERO==========*/
 .hero {
-  width: 100%;
-  background-color: var(--secondary-bg-color);
   min-height: 600px;
   text-align: center;
   padding-top: 200px;
@@ -186,6 +181,10 @@ body {
 /*==========END HERO==========*/
 
 /*==================Advantages======*/
+.section.no-padding {
+  padding-bottom: 0;
+}
+
 .visually-hidden {
   visibility: hidden;
 }
@@ -193,6 +192,11 @@ body {
 .advantages {
   display: flex;
   padding-bottom: 0;
+}
+/* (100%-3маржина*30px)/4столбца */
+.advantages li {
+  /*width: calc(100%-90)/4;*/
+  width: 270px;
 }
 
 .advantages li:not(:last-child) {
@@ -238,7 +242,7 @@ body {
 /*========= END Чем мы занимаемся====*/
 
 /*========= OUR TEAM====*/
-.team-color {
+.team-bgcolor {
   background-color: var(--other-bg-color);
 }
 .team {
@@ -249,18 +253,23 @@ body {
   margin-right: 30px;
 }
 
+.card {
+  width: 270;
+}
+
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .profession {
   font-weight: 400;
   color: var(--secondary-text-color);
+  margin-top: 10px;
 }
 
 /*========= END OUR TEAM====*/
@@ -279,13 +288,14 @@ body {
   text-decoration: none;
 }
 
+.second-bgc {
+  background-color: var(--secondary-bg-color);
+}
+
 .footer {
   display: inline-block;
-  background-color: var(--secondary-bg-color);
-  width: 100%;
   padding-bottom: 60px;
   padding-top: 60px;
-  padding-left: 215px;
 }
 
 .footer-link {

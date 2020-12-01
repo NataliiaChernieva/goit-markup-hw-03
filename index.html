@@ -15,7 +15,7 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header header-boder">
         <div class="container">
            <nav class="header-nav">
               <a class="logo-link" href="index.html" aria-label="логотип сайта" lang="en">
@@ -43,7 +43,7 @@
    
     <main>
         <!-- Герой -->
-        <section>
+        <section class="second-bgc"> 
             <div class="container">
                 <div class="hero"> 
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -98,30 +98,38 @@
         
 
         <!--Наша команда-->
-        <section class="section team-color" >
+        <section class="section team-bgcolor" >
             <div class="container">
             <h2 class="titles">Наша команда</h2>
             <ul class="dots team">
                 <li>
-                    <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                    <h3 class="name">Игорь Демьяненко</h3>
-                    <p class="profession name" lang="en">Product Designer</p>
+                    <div class="card">
+                       <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                       <h3 class="name">Игорь Демьяненко</h3>
+                       <p class="profession name" lang="en">Product Designer</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
-                    <h3 class="name">Ольга Репина</h3>
-                    <p class="profession name" lang="en">Frontend Developer</p>
+                    <div class="card">
+                        <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
+                        <h3 class="name">Ольга Репина</h3>
+                        <p class="profession name" lang="en">Frontend Developer</p>
+                    </div>
+            </li>
+                <li>
+                    <div class="card">
+                        <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <h3 class="name">Николай Тарасов</h3>
+                        <p class="profession name" lang="en">Marketing</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260">
-                    <h3 class="name">Николай Тарасов</h3>
-                    <p class="profession name" lang="en">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" height="260">
-                    <h3 class="name">Михаил Ермаков</h3>
-                    <p class=" profession name" lang="en">UI Designer</p>
-                </li>
+                    <div class="card">
+                        <img src="./images/mihail.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <h3 class="name">Михаил Ермаков</h3>
+                        <p class=" profession name" lang="en">UI Designer</p>
+                    </div>
+            </li>
             </ul>
         </div>
         </section>
@@ -129,6 +137,7 @@
     </main>
     
     <!--Футер-->
+    <section class="second-bgc">
     <div class="container">
         <footer class="footer">
             <a class="footer-link" href="index.html" aria-label="логотип сайта" lang="en">
@@ -145,5 +154,6 @@
     
         </footer>
     </div>
+    </section>
 </body>
 </html>
