@@ -58,15 +58,13 @@ body {
 
 /*=============HEADER=======*/
 .header {
-  display: flex;
+  /*display: flex;*/
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
   display: flex;
   align-items: center;
-}
-.header-boder {
-  border-bottom: 1px solid #ececec;
 }
 
 .section.no-padding {
@@ -77,8 +75,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*padding-left: 215px;*/
 }
+
 .logo {
   color: var(--logo-color);
 }
@@ -186,6 +184,7 @@ body {
 }
 
 .visually-hidden {
+  display: none;
   visibility: hidden;
 }
 
@@ -253,9 +252,9 @@ body {
   margin-right: 30px;
 }
 
-.card {
+/*.card {
   width: 270;
-}
+}*/
 
 .name {
   font-weight: 500;
@@ -273,6 +272,8 @@ body {
 }
 
 /*========= END OUR TEAM====*/
+
+/*========= FOOTER====*/
 .addresses {
   font-style: normal;
   font-weight: 400;
@@ -312,6 +313,31 @@ body {
 .logo-footer {
   color: var(--other-color-text);
 }
+/*========= END FOOTER====*/
+
+/*========= PORTFOLIO====*/
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.portfolio-all {
+  display: flex;
+  flex-wrap: wrap;
+}
+.type {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+}
+
+.type:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.type:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 
 .link-decoration {
   color: inherit;
@@ -323,6 +349,10 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .portfolio-type {
@@ -331,9 +361,15 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 
 .portfolio-button {
+  background-color: var(--other-bg-color);
+  border: none;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -341,6 +377,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.portfolio li:not(:last-child) {
+  margin-right: 8px;
+}
+/*========= END PORTFOLIO====*/
+
 .link-decoration:focus,
 .link-decoration:hover,
 .connect:hover,
