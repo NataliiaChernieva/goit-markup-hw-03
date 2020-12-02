@@ -289,7 +289,7 @@ body {
   text-decoration: none;
 }
 
-.second-bgc {
+.second-bgcolor {
   background-color: var(--secondary-bg-color);
 }
 
@@ -328,6 +328,7 @@ body {
 }
 .type {
   box-sizing: border-box;
+  width: 370px;
   border: 1px solid #eeeeee;
 }
 
@@ -344,28 +345,6 @@ body {
   text-decoration: none;
 }
 
-.portfolio-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 23px;
-  margin-right: 23px;
-}
-
-.portfolio-type {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  margin-bottom: 20px;
-  margin-left: 23px;
-  margin-right: 23px;
-}
-
 .portfolio-button {
   background-color: var(--other-bg-color);
   border: none;
@@ -376,6 +355,27 @@ body {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.portfolio-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .portfolio li:not(:last-child) {
