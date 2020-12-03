@@ -281,24 +281,22 @@ body {
 
 /*========= FOOTER====*/
 .addresses {
-  display: inline-block;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--other-color-text);
-  margin-bottom: 9px;
-}
-
-.addresses :nth-child(3)) {
-  display: inline-block;
-  margin-bottom: 0px;
 }
 
 .el {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.addresses:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .second-bgcolor {
@@ -334,6 +332,9 @@ body {
   justify-content: center;
   margin-bottom: 56px;
 }
+.portfolio li:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-all {
   display: flex;
@@ -358,6 +359,10 @@ body {
   text-decoration: none;
 }
 
+.link-decoration div {
+  padding: 20px 24px;
+}
+
 .portfolio-button {
   background-color: var(--other-bg-color);
   border: none;
@@ -374,10 +379,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .portfolio-type {
@@ -386,14 +388,8 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
-.portfolio li:not(:last-child) {
-  margin-right: 8px;
-}
 /*========= END PORTFOLIO====*/
 
 .link-decoration:focus,
